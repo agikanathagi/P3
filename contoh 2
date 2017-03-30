@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int Nilai;
+
+    cout<<"Berapa bilangannya? ";
+    cin>>Nilai;
+
+    if(Nilai<=70){
+        cout<<"Indeks C";
+
+    }else if(Nilai>=70 && Nilai<=85){
+        cout<<"Indeks B";
+
+    }else(cout<<"Indeks A");
+
+    return 0;
+}
