@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int Bilangan;
+    int Definisi_Bilangan;
+
+    cout<<"Masukkan bilangan: ";
+    cin>>Bilangan;
+
+    Definisi_Bilangan=Bilangan%2;
+
+    if(Definisi_Bilangan==0){
+        cout<<"Bilangan Genap";
+    }else{
+        cout<<"Bilangan Ganjil";
+    }
+
+    return 0;
+}
