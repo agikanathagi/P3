@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int Nilai_Tes;
+    int Nilai_UTS;
+    int Nilai_UAS;
+    int Nilai_Tugas;
+    int Nilai_Akhir;
+
+    cout<<"Berapa Nilai Tes Matematika Anda? ";
+    cin>>Nilai_Tes;
+
+    cout<<"Berapa Nilai UTS Matematika Anda? ";
+    cin>>Nilai_UTS;
+
+    cout<<"Berapa Nilai UAS Matematika Anda? ";
+    cin>>Nilai_UAS;
+
+    cout<<"Berapa Nilai Tugas Matematika Anda? ";
+    cin>>Nilai_Tugas;
+
+    Nilai_Akhir=0.20*Nilai_Tes+0.30*Nilai_UTS+0.30*Nilai_UAS+0.20*Nilai_Tugas;
+
+    if(Nilai_Akhir<=50){
+        cout<<"D";
+    }else if(Nilai_Akhir>50 && Nilai_Akhir<=70){
+        cout<<"C";
+    }else if(Nilai_Akhir>70 && Nilai_Akhir<=80){
+        cout<<"B";
+    }else(cout<<"A");
+
+    return 0;
+}
